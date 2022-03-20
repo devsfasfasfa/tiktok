@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiktok - Instagram</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <form>
+      <div class="form-group">
+        <div>Category</div>
+        <select class="form-control">
+          <option value="0">TikTok</option>
+          <option value="0">Select category</option>
+          <option value="0">Select category</option>
+          <option value="0">Select category</option>
+        </select>
+
+        <div class="form-group">
+          <div>Service (<b>Cost per 1000</b>)</div>
+          <select class="form-control">
+            <option value="0">TikTok View</option>
+            <option value="0">Select category</option>
+            <option value="0">Select category</option>
+            <option value="0">Select category</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div>Link</div>
+          <input type="url" class="form-control" id="link" />
+        </div>
+        <div class="form-group">
+          <div>Quantity</div>
+          <input
+            type="number"
+            id="quantity"
+            class="form-control"
+            onkeyup="charge()"
+          />
+        </div>
+        <div class="form-group">
+          <div>Charge, VNĐ</div>
+          <input id="charges" class="form-control" disabled value="0" />
+        </div>
+
+        <div class="form-group">
+          <div>
+            <i class="fa fa-play" style="font-size: 17px; color: green">
+              Fast start</i
+            >
+          </div>
+
+          <div>
+            <i
+              class="fa fa-hourglass"
+              style="font-size: 17px; color: rgb(95, 37, 150)"
+              >Current speed: ~18167-23809/hour</i
+            >
+          </div>
+          <input class="form-control" value="- TikTok views" disabled />
+          <hr />
+          <div class="min-max"><b>Min:</b> 100 <b>Max:</b> 100000000</div>
+
+          <button type="submit" class="btn" onclick="order()">
+            CREATE ORDER
+          </button>
+
+          <div>
+            Please don't put more than 1 order for the same link at the same
+            time to avoid the overlap!
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="meme"></div>
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
+</html>

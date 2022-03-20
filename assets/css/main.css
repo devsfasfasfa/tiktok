@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Exo", arial, sans-serif;
+  line-height: 1.6;
+}
+form {
+  float: left;
+  width: 570px;
+  height: 570px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #cccccc;
+  margin-top: 70px;
+  margin-left: 250px;
+}
+
+.meme {
+  float: left;
+  width: 400px;
+  height: 570px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #cccccc;
+  margin-top: 70px;
+  margin-left: 50px;
+  background: url(../../img/meme.jpg) no-repeat;
+  background-size: 100%;
+}
+
+.form-control {
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  border-radius: 5px !important;
+  margin-bottom: 15px;
+}
+
+.btn {
+  border-radius: 25px;
+  height: auto;
+  padding: 8px 37px;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: rgba(34, 34, 34, 0.9);
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  background: rgba(63, 63, 63, 0.9);
+}
+.min-max {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+  .meme,
+  form {
+    width: 365px;
+    max-height: 800px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
