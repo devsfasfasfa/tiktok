@@ -14,7 +14,7 @@
   <body>
     <form>
       <div class="form-group">
-        <div>Category</div>
+        <div>Danh mục</div>
         <select class="form-control">
           <option value="0">TikTok</option>
           <option value="0">Select category</option>
@@ -23,36 +23,42 @@
         </select>
 
         <div class="form-group">
-          <div>Service (<b>Cost per 1000</b>)</div>
+          <div>Dịch vụ (<b>Giá mỗi 1000</b>)</div>
           <select class="form-control">
-            <option value="0">TikTok View</option>
+            <option value="0">Lượt xem TikTok</option>
             <option value="0">Select category</option>
             <option value="0">Select category</option>
             <option value="0">Select category</option>
           </select>
         </div>
         <div class="form-group">
-          <div>Link</div>
-          <input type="url" class="form-control" id="link" />
+          <div>Liên kết</div>
+          <input
+            type="url"
+            class="form-control"
+            id="link"
+            placeholder="https://www.tiktok.com/@theanh28entertainment/video/7077093278889413914"
+          />
         </div>
         <div class="form-group">
-          <div>Quantity</div>
+          <div>Số lượng</div>
           <input
             type="number"
             id="quantity"
             class="form-control"
+            placeholder="max 5000 thôi nha =))"
             onkeyup="charge()"
           />
         </div>
         <div class="form-group">
-          <div>Charge, VNĐ</div>
+          <div>Trả tiền, VNĐ</div>
           <input id="charges" class="form-control" disabled value="0" />
         </div>
 
         <div class="form-group">
           <div>
             <i class="fa fa-play" style="font-size: 17px; color: green">
-              Fast start</i
+              Tốc độ nhanh</i
             >
           </div>
 
@@ -60,20 +66,20 @@
             <i
               class="fa fa-hourglass"
               style="font-size: 17px; color: rgb(95, 37, 150)"
-              >Current speed: ~18167-23809/hour</i
+              >Tốc độ hiện tại: ~ 10537-119446 / giờ</i
             >
           </div>
-          <input class="form-control" value="- TikTok views" disabled />
+          <input class="form-control" value="- Lượt xem TikTok" disabled />
           <hr />
           <div class="min-max"><b>Min:</b> 100 <b>Max:</b> 100000000</div>
 
           <button type="submit" class="btn" onclick="order()">
-            CREATE ORDER
+            TẠO ĐƠN HÀNG
           </button>
 
           <div>
-            Please don't put more than 1 order for the same link at the same
-            time to avoid the overlap!
+            Vui lòng không đặt cùng lúc nhiều hơn 1 đơn hàng cho cùng một link
+            để tránh trùng lặp!
           </div>
         </div>
       </div>
